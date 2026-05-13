@@ -1,0 +1,12 @@
+/* Dashboard Page - Main CSS File */
+/* Import modular CSS files */
+@import url('base.css');
+@import url('header.css');
+@import url('sidebar.css');
+@import url('components.css');
+@import url('footer.css');
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

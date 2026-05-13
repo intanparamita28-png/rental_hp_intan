@@ -1,0 +1,97 @@
+/* Sidebar Styles */
+
+/* Outbar - Wrapper untuk Sidebar */
+.outbar {
+  padding-top: 15px;
+  padding-left: 15px;
+
+  padding-right: 15px;
+  background-color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar {
+  border-radius: 8px;
+  width: 230px;
+  background-color: #1e293b;
+  color: #e5e7eb;
+  padding: 20px 10px;
+  min-height: 100vh;
+  transition: 0.3s;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  color: #e5e7eb;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.nav-item i {
+  font-size: 16px;
+  width: 20px;
+  transition: all 0.25s ease;
+}
+
+.nav-item:hover {
+  background-color: #334155;
+}
+
+.nav-item.active {
+  background-color: #2563eb;
+  color: white;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+  .outbar {
+    width: auto;
+  }
+
+  .sidebar {
+    width: 60px;
+  }
+
+  .nav-item span {
+    display: none;
+  }
+
+  .nav-item {
+    justify-content: center;
+    padding: 12px 10px;
+  }
+}
+/* === SIDEBAR TOGGLE === */
+
+/* Sidebar normal */
+.sidebar {
+  width: 230px;
+  transition: 0.3s;
+}
+
+/* Sidebar kecil */
+.sidebar.tutup {
+  width: 70px;
+}
+
+/* Hilangkan teks */
+.sidebar.tutup span {
+  display: none;
+}
+
+/* Tengahin icon */
+.sidebar.tutup .nav-item {
+  justify-content: center;
+}

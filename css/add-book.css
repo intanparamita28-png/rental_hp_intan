@@ -1,0 +1,363 @@
+/* Add Book Page Styles - Different from Form Page */
+
+.add-book-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.book-page-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 35px;
+}
+
+.btn-back-book {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #7986cb 0%, #5c6bc0 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: all 0.3s;
+  box-shadow: 0 5px 15px rgba(121, 134, 203, 0.4);
+}
+
+.btn-back-book:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(121, 134, 203, 0.5);
+}
+
+.book-page-header h2 {
+  color: #1a237e;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Form Card */
+.book-form-card {
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  border-radius: 20px;
+  padding: 45px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e8eaf6;
+}
+
+/* Cover Upload Section */
+.cover-upload-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  padding: 30px;
+  background: linear-gradient(135deg, #e8eaf6 0%, #c5cae9 100%);
+  border-radius: 15px;
+  border: 2px dashed #7986cb;
+}
+.cover-preview {
+  position: relative;
+  flex-shrink: 0;
+  width: 180px;
+  height: 260px;
+}
+
+.cover-placeholder {
+  width: 180px;
+  height: 260px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.cover-placeholder:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cover-placeholder i {
+  font-size: 50px;
+  color: #7986cb;
+}
+
+.cover-placeholder p {
+  color: #666;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+}
+
+#coverPreview {
+  width: 180px;
+  height: 260px;
+  border-radius: 12px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+.cover-upload-info {
+  flex: 1;
+}
+
+.upload-cover-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(26, 35, 126, 0.3);
+}
+
+.upload-cover-label:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(26, 35, 126, 0.4);
+}
+
+.upload-cover-hint {
+  color: #1a237e;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 15px 0 0 0;
+  font-weight: 500;
+}
+
+/* Form Grid */
+.book-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.book-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.book-form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.book-form-group label {
+  color: #1a237e;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.required {
+  color: #ef5350;
+  font-weight: bold;
+}
+
+.book-form-group input,
+.book-form-group select,
+.book-form-group textarea {
+  padding: 14px 18px;
+  border: 2px solid #e8eaf6;
+  border-radius: 12px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: all 0.3s;
+  outline: none;
+  background-color: white;
+}
+
+.book-form-group input:focus,
+.book-form-group select:focus,
+.book-form-group textarea:focus {
+  border-color: #7986cb;
+  box-shadow: 0 0 0 4px rgba(121, 134, 203, 0.2);
+  transform: translateY(-2px);
+}
+
+.book-form-group select[multiple] {
+  padding: 10px;
+}
+
+.book-form-group select[multiple] option {
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 3px;
+}
+
+.book-form-group select[multiple] option:checked {
+  background: linear-gradient(135deg, #7986cb 0%, #5c6bc0 100%);
+  color: white;
+}
+
+.book-form-group small {
+  color: #666;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.book-form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.8;
+}
+
+/* Action Buttons */
+.book-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 3px solid #e8eaf6;
+}
+
+.btn-submit-book,
+.btn-cancel-book {
+  padding: 16px 35px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s;
+}
+
+.btn-submit-book {
+  background: linear-gradient(135deg, #66bb6a 0%, #4caf50 100%);
+  color: white;
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+.btn-submit-book:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.5);
+}
+
+.btn-cancel-book {
+  background: linear-gradient(135deg, #ef5350 0%, #e53935 100%);
+  color: white;
+  box-shadow: 0 5px 15px rgba(239, 83, 80, 0.4);
+}
+
+.btn-cancel-book:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(239, 83, 80, 0.5);
+}
+
+/* Footer */
+.page-footer {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+  font-size: 14px;
+  margin-top: 50px;
+  border-top: 2px solid #f0f0f0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .add-book-container {
+    max-width: 900px;
+  }
+
+  .book-form-card {
+    padding: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .book-form-card {
+    padding: 25px;
+  }
+
+  .book-page-header {
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  .book-page-header h2 {
+    font-size: 22px;
+  }
+
+  .btn-back-book {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .cover-upload-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+  }
+
+  .book-form-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .book-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .btn-submit-book,
+  .btn-cancel-book {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .book-form-card {
+    padding: 20px;
+  }
+
+  .book-page-header h2 {
+    font-size: 20px;
+  }
+
+  .cover-placeholder {
+    width: 150px;
+    height: 220px;
+  }
+
+  .cover-placeholder i {
+    font-size: 40px;
+  }
+
+  #coverPreview {
+    width: 150px;
+    height: 220px;
+  }
+
+  .book-form-group input,
+  .book-form-group select,
+  .book-form-group textarea {
+    padding: 12px 15px;
+    font-size: 13px;
+  }
+}

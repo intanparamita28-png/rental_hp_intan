@@ -1,0 +1,432 @@
+/* Table Styles - Shared for Genre & Category Pages */
+
+.table-container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e8eaf6;
+}
+
+.table-header h2 {
+  color: #1a237e;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.btn-add {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-add:hover {
+  background-color: #283593;
+  transform: translateY(-2px);
+}
+
+.btn-add i {
+  font-size: 14px;
+}
+
+/* Table Wrapper */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* Data Table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.data-table thead {
+  background-color: #f5f5f5;
+}
+
+.data-table thead tr th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #1a237e;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #e8eaf6;
+}
+
+.data-table thead tr th:first-child {
+  border-radius: 8px 0 0 0;
+  width: 80px;
+  text-align: center;
+}
+
+.data-table thead tr th:last-child {
+  border-radius: 0 8px 0 0;
+  text-align: center;
+  width: 200px;
+}
+
+.data-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.data-table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+.data-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.data-table tbody tr td {
+  padding: 15px;
+  color: #333;
+  font-size: 14px;
+}
+
+.data-table tbody tr td:first-child {
+  text-align: center;
+  font-weight: 600;
+  color: #666;
+}
+
+.data-table tbody tr td:last-child {
+  text-align: center;
+}
+
+/* Action Buttons */
+.btn-edit,
+.btn-delete {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s;
+  margin: 0 3px;
+}
+
+.btn-edit {
+  background-color: #7986cb;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #5c6bc0;
+  transform: translateY(-2px);
+}
+
+.btn-delete {
+  background-color: #ef5350;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #e53935;
+  transform: translateY(-2px);
+}
+
+.btn-edit i,
+.btn-delete i {
+  font-size: 11px;
+}
+
+/* Footer */
+.page-footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .table-container {
+    padding: 15px;
+  }
+
+  .table-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .table-header h2 {
+    font-size: 18px;
+  }
+
+  .btn-add {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .data-table {
+    font-size: 12px;
+  }
+
+  .data-table thead tr th,
+  .data-table tbody tr td {
+    padding: 10px 8px;
+  }
+
+  .data-table thead tr th:first-child,
+  .data-table tbody tr td:first-child {
+    width: 50px;
+  }
+
+  .data-table thead tr th:last-child,
+  .data-table tbody tr td:last-child {
+    width: auto;
+  }
+
+  .btn-edit,
+  .btn-delete {
+    padding: 5px 8px;
+    font-size: 11px;
+    margin: 2px;
+  }
+
+  .btn-edit span,
+  .btn-delete span {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .data-table thead tr th:nth-child(2),
+  .data-table tbody tr td:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .btn-edit,
+  .btn-delete {
+    padding: 4px 6px;
+  }
+}
+
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  animation: slideDown 0.3s;
+}
+
+.modal-small {
+  max-width: 400px;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  border-bottom: 2px solid #e8eaf6;
+}
+
+.modal-header h3 {
+  margin: 0;
+  color: #1a237e;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.close {
+  color: #999;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+  line-height: 1;
+}
+
+.close:hover,
+.close:focus {
+  color: #1a237e;
+}
+
+.modal-body {
+  padding: 25px;
+}
+
+.modal-body .form-group {
+  margin-bottom: 20px;
+}
+
+.modal-body .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #1a237e;
+  font-size: 14px;
+}
+
+.modal-body .form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e8eaf6;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+  outline: none;
+}
+
+.modal-body .form-group input:focus {
+  border-color: #7986cb;
+}
+
+.delete-message {
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.btn-cancel {
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  color: #666;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-cancel:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-submit {
+  padding: 10px 20px;
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #283593;
+}
+
+.btn-delete-confirm {
+  padding: 10px 20px;
+  background-color: #ef5350;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-delete-confirm:hover {
+  background-color: #e53935;
+}
+
+/* Modal Responsive */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    margin: 10% auto;
+  }
+
+  .modal-header {
+    padding: 15px 20px;
+  }
+
+  .modal-header h3 {
+    font-size: 18px;
+  }
+
+  .modal-body {
+    padding: 20px;
+  }
+
+  .modal-footer {
+    flex-direction: column;
+  }
+
+  .btn-cancel,
+  .btn-submit,
+  .btn-delete-confirm {
+    width: 100%;
+  }
+}

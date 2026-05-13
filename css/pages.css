@@ -1,0 +1,15 @@
+/* Common Page Layouts - For pages with header, sidebar, and content */
+/* Import base components */
+@import url('base.css');
+@import url('header.css');
+@import url('sidebar.css');
+@import url('footer.css');
+
+/* This file can be used by: 
+   - Genre page
+   - Category page
+   - Buku Dipinjam page
+   - Riwayat Peminjaman page
+   - Profile page
+   - All Books page
+*/
