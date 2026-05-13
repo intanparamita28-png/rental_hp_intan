@@ -17,11 +17,12 @@
     />
   </head>
   <body>
-    <div id="header-placeholder"></div>
+    <!-- HEADER -->
+    <?php include '../components/header.php'; ?>
 
-    
-    <!-- SIDEBAR -->
-    <?php include '../components/sidebar.php'; ?>
+    <div class="container">
+      <!-- SIDEBAR -->
+      <?php include '../components/sidebar.php'; ?>
 
       <!-- Main Content -->
       <main class="main-content">

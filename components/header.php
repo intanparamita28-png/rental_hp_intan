@@ -21,10 +21,10 @@
             </div>
           </div>
         </div>
-        <a href="profile.html" class="dropdown-item">
+        <a href="profile.php" class="dropdown-item">
           <i class="fas fa-user-circle"></i><span>My Profile</span>
         </a>
-        <a href="dashboard.html" class="dropdown-item">
+        <a href="dashboard.php" class="dropdown-item">
           <i class="fas fa-th-large"></i><span>Dashboard</span>
         </a>
         <div class="dropdown-divider"></div>

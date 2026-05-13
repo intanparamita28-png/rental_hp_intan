@@ -6,8 +6,8 @@
     <title>Merek HP - RENTPHONE</title>
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/header.css" />
-    <script src="../js/header.js"></script>
-    <script src="../js/components.js" defer></script>
+    <!-- <script src="../js/header.js"></script> -->
+    <!-- <script src="../js/components.js" defer></script> -->
 
     <link rel="stylesheet" href="../css/sidebar.css" />
     <link rel="stylesheet" href="../css/table.css" />
@@ -16,12 +16,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+
+    <script src="../js/header.js" defer></script>
   </head>
   <body>
-    <div id="header-placeholder"></div>
+    <!-- HEADER -->
+    <?php include '../components/header.php'; ?>
 
     <div class="container">
-          <?php include '../components/sidebar.php'; ?>
+      <!-- SIDEBAR -->
+      <?php include '../components/sidebar.php'; ?>
 
       <!-- Main Content -->
       <main class="main-content">

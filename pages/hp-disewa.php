@@ -16,14 +16,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
 
+    <script src="../js/header.js" defer></script>
     <script src="../js/components.js" defer></script>
   </head>
 
   <body>
-    <div id="header-placeholder"></div>
+    <!-- HEADER -->
+    <?php include '../components/header.php'; ?>
 
     <div class="container">
-    <?php include '../components/sidebar.php'; ?>
+      <!-- SIDEBAR -->
+      <?php include '../components/sidebar.php'; ?>
 
       <!-- MAIN CONTENT -->
 
@@ -34,7 +37,7 @@
 
             <button
               class="btn-add-peminjaman"
-              onclick="window.location.href = 'add-peminjaman.php'"
+              onclick="window.location.href = 'add-sewa.php'"
             >
               <i class="fas fa-plus"></i> Tambah Penyewaan
             </button>

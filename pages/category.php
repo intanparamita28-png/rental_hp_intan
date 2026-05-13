@@ -22,106 +22,16 @@
 
   <body>
     <!-- HEADER -->
-    <header class="header">
-      <div class="header-left">
-        <div class="menu-toggle">
-          <i class="fas fa-bars"></i>
-        </div>
-      <div class="logo">RENTPHONE</div>
-      </div>
-
-      <div class="header-right">
-        <i class="fas fa-bell notification-icon"></i>
-
-        <div class="user-menu">
-          <div class="user-dropdown">
-            <i class="fas fa-user-circle"></i>
-            <span>Admin</span>
-            <i class="fas fa-chevron-down"></i>
-          </div>
-
-          <div class="dropdown-menu">
-            <div class="dropdown-header">
-              <div class="user-info">
-                <div class="user-avatar">
-                  <i class="fas fa-user"></i>
-                </div>
-
-                <div class="user-details">
-                  <div class="user-name">Admin User</div>
-                  <div class="user-role">Administrator</div>
-                </div>
-              </div>
-            </div>
-
-            <a href="profile.php" class="dropdown-item">
-              <i class="fas fa-user-circle"></i>
-              <span>My Profile</span>
-            </a>
-
-            <a href="dashboard.php" class="dropdown-item">
-              <i class="fas fa-th-large"></i>
-              <span>Dashboard</span>
-            </a>
-
-            <div class="dropdown-divider"></div>
-
-            <button class="dropdown-item logout">
-              <i class="fas fa-sign-out-alt"></i>
-              <span>Logout</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
+    <?php include '../components/header.php'; ?>
 
     <div class="container">
       <!-- SIDEBAR -->
-
-      <div class="outbar">
-        <aside class="sidebar">
-          <nav class="nav-menu">
-            <a href="dashboard.php" class="nav-item">
-              <i class="fas fa-th-large"></i>
-              <span>Dashboard</span>
-            </a>
-
-            <a href="allhp.php" class="nav-item">
-              <i class="fas fa-mobile-alt"></i>
-              <span>Daftar HP</span>
-            </a>
-
-            <a href="merek-hp.php" class="nav-item">
-              <i class="fas fa-tags"></i>
-              <span>Merek HP</span>
-            </a>
-
-            <a href="kategori-hp.php" class="nav-item active">
-              <i class="fas fa-list"></i>
-              <span>Kategori HP</span>
-            </a>
-
-            <a href="hp-disewa.php" class="nav-item">
-              <i class="fas fa-hand-holding"></i>
-              <span>HP Disewa</span>
-            </a>
-
-            <a href="riwayat-sewa.php" class="nav-item">
-              <i class="fas fa-history"></i>
-              <span>Riwayat Penyewaan</span>
-            </a>
-
-            <a href="profile.php" class="nav-item">
-              <i class="fas fa-user"></i>
-              <span>Profile</span>
-            </a>
-          </nav>
-        </aside>
-      </div>
+      <?php include '../components/sidebar.php'; ?>
 
       <!-- MAIN CONTENT -->
 
       <main class="main-content">
+        
         <div class="table-container">
           <div class="table-header">
             <h2>Semua Kategori Handphone :</h2>
@@ -257,4 +167,3 @@
     <script src="../js/modal.js"></script>
   </body>
 </html>
-```

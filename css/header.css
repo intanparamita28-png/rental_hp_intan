@@ -12,6 +12,25 @@
   z-index: 100;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: #1a237e;
+  cursor: pointer;
+  padding: 5px;
+  transition: color 0.3s;
+}
+
+.menu-toggle:hover {
+  color: #283593;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+}
+
 .header-left {
   display: flex;
   align-items: center;

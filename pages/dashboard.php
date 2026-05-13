@@ -32,6 +32,8 @@ $query = mysqli_query($conn, "
 </head>
 
 <body>
+  <!-- HEADER -->
+  <?php include '../components/header.php'; ?>
 
 <div class="container">
 

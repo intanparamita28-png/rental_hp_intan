@@ -1,6 +1,22 @@
 // Header Dropdown Functions
 
 document.addEventListener('DOMContentLoaded', function() {
+  // Sidebar Toggle
+  const menuToggle = document.querySelector('.menu-toggle');
+  const sidebar = document.querySelector('.sidebar');
+  const outbar = document.querySelector('.outbar');
+  
+  if (menuToggle && (sidebar || outbar)) {
+    menuToggle.addEventListener('click', function() {
+      if (sidebar) {
+        sidebar.classList.toggle('active');
+      }
+      if (outbar) {
+        outbar.classList.toggle('active');
+      }
+    });
+  }
+  
   const userDropdown = document.querySelector('.user-dropdown');
   const dropdownMenu = document.querySelector('.dropdown-menu');
   
@@ -41,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         sessionStorage.clear();
         
         // Redirect to login page
-        window.location.href = '../index.html';
+        window.location.href = '../index.php';
       }
     });
   }

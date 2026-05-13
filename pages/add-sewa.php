@@ -15,15 +15,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
 
-   
+    <script src="../js/header.js" defer></script>
   </head>
 
   <body>
-    <div id="header-placeholder"></div>
+    <!-- HEADER -->
+    <?php include '../components/header.php'; ?>
 
-  
-    <!-- SIDEBAR -->
-    <?php include '../components/sidebar.php'; ?>
+    <div class="container">
+      <!-- SIDEBAR -->
+      <?php include '../components/sidebar.php'; ?>
       <!-- MAIN CONTENT -->
 
       <main class="main-content">

@@ -21,11 +21,17 @@ async function loadComponent(selector, url, callback) {
  * Mark the active sidebar nav-item based on current filename.
  */
 function setActiveSidebarItem() {
-  const page = location.pathname.split('/').pop().replace('.html', '');
+  const page = location.pathname.split('/').pop().replace('.php', '').replace('.html', '');
   document.querySelectorAll('.nav-menu .nav-item').forEach(link => {
-    link.classList.toggle('active', link.dataset.page === page);
+    const linkPage = link.getAttribute('href').replace('.php', '').replace('.html', '');
+    link.classList.toggle('active', linkPage === page || link.dataset.page === page);
   });
 }
+
+// Run on page load
+document.addEventListener('DOMContentLoaded', function() {
+  setActiveSidebarItem();
+});
 
 /**
  * Init header dropdown toggle.

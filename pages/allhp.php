@@ -17,15 +17,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+
+    <script src="../js/header.js" defer></script>
   </head>
 
   <body>
-    <div id="header-placeholder"></div>
+    <!-- HEADER -->
+    <?php include '../components/header.php'; ?>
 
     <div class="container">
-      <
-    <!-- SIDEBAR -->
-    <?php include '../components/sidebar.php'; ?>
+      <!-- SIDEBAR -->
+      <?php include '../components/sidebar.php'; ?>
       <!-- MAIN CONTENT -->
 
       <main class="main-content">
@@ -59,7 +61,7 @@
 
           <div class="book-grid">
             <!-- 1 -->
-            <a href="detail-hp.php">
+            <a href="detail-hp.php?id=1">
               <div class="book-card">
                 <img src="../assets/img/image-1.jpg" />
                 <h3>iPhone 15 Pro</h3>
@@ -71,7 +73,7 @@
             </a>
 
             <!-- 2 -->
-            <a href="detail-hp.php">
+            <a href="detail-hp.php?id=2">
               <div class="book-card">
                 <img src="../assets/img/image-2.jpg" />
                 <h3>iPhone 14</h3>
@@ -83,7 +85,7 @@
             </a>
 
             <!-- 3 -->
-            <a href="detail-hp.php">
+            <a href="detail-hp.php?id=3">
               <div class="book-card">
                 <img src="../assets/img/image-3.jpg" />
                 <h3>iPhone 12</h3>
@@ -95,7 +97,7 @@
             </a>
 
             <!-- 4 -->
-            <a href="detail-hp.php">
+            <a href="detail-hp.php?id=4">
               <div class="book-card">
                 <img src="../assets/img/image-4.jpg" />
                 <h3>iPhone 11</h3>
@@ -107,7 +109,7 @@
             </a>
 
             <!-- 5 -->
-            <a href="detail-hp.php">
+            <a href="detail-hp.php?id=5">
               <div class="book-card">
                 <img src="../assets/img/image-5.jpg" />
                 <h3>iPhone 13</h3>
@@ -119,7 +121,7 @@
             </a>
 
             <!-- 6 -->
-            <a href="detail-hp.php">
+            <a href="detail-hp.php?id=6">
               <div class="book-card">
                 <img src="../assets/img/image-6.jpg" />
                 <h3>iPhone 11</h3>
@@ -131,7 +133,7 @@
             </a>
 
             <!-- 7 -->
-            <a href="detail-hp.php">
+            <a href="detail-hp.php?id=7">
               <div class="book-card">
                 <img src="../assets/img/image-7.jpg" />
                 <h3>iPhone 15</h3>
@@ -143,7 +145,7 @@
             </a>
 
             <!-- 8 -->
-            <a href="detail-hp.php">
+            <a href="detail-hp.php?id=8">
               <div class="book-card">
                 <img src="../assets/img/image-8.jpg" />
                 <h3>iPhone 16</h3>
